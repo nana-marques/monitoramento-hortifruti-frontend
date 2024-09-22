@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background:linear-gradient(180deg, rgba(93,255,128,0.47102591036414565) 3%, rgba(255,248,145,1) 100%);
+    background:#5CC163;
 }
 
 .r-container{
