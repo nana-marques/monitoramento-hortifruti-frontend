@@ -1,35 +1,59 @@
+.container-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F1F1F1;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #F1F1F1;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.close-button {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #F1F1F1;
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
-    height: 60px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.item{
-    float: left;
+.item {
+    margin: 1rem 0;
 }
 
-.itemi{
-    float: right;
-}
-
-.item p{
-    display: block;
-    color: #007838;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    text-decoration: none;
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .hamburguer {
     width: 35px;
     height: 5px;
     background-color: #007838;
-    margin: 10px;
+    margin: 5px;
 }
