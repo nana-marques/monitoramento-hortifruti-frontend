@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './styles.css';
 
 const Navbar = () => {
@@ -25,16 +26,16 @@ const Navbar = () => {
                 <button className="close-button" onClick={toggleMenu}>X</button>
                 <ul className="navbar">
                     <li className="item">
-                        <p>Monitoramento de Gondolas</p>
+                        <Link to="/" onClick={toggleMenu}>Monitoramento de Gôndolas</Link>
                     </li>
                     <li className="item">
-                        <a href="#">Opção 1</a>
+                        <Link to="/perfil" onClick={toggleMenu}>Perfil de Usuário</Link>
                     </li>
                     <li className="item">
-                    <a href="#">Opção 2</a>
+                        <Link to="/opcao2" onClick={toggleMenu}>Opção 2</Link>
                     </li>
                     <li className="item">
-                    <a href="#">Opção 3</a>
+                        <Link to="/opcao3" onClick={toggleMenu}>Opção 3</Link>
                     </li>
                 </ul>
             </motion.div>

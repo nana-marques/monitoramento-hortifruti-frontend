@@ -58,3 +58,20 @@
     background-color: #007838;
     margin: 5px;
 }
+
+/* Estilo padrão dos links */
+.navbar .item a {
+    color: #007838; /* Escolha a cor desejada para os links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Opcional: Deixa o texto em negrito */
+}
+
+/* Alteração da cor ao passar o mouse */
+.navbar .item a:hover {
+    color: #004d29; /* Cor para o efeito hover */
+}
+
+/* Alteração da cor ao clicar ou selecionar */
+.navbar .item a:active {
+    color: #002815;
+}
